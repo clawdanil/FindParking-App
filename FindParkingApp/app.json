@@ -2,7 +2,7 @@
   "expo": {
     "name": "Orbi Near",
     "slug": "FindParkingApp",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -12,11 +12,20 @@
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Orbi Near uses your location to find places near you."
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.clawdanil.FindParkingApp",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "Orbi Near uses your location to find places near you."
       }
     },
     "android": {
